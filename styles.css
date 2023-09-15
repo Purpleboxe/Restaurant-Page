@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Overpass', 'sans-serif';
+    --main-color: #e85d04;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: var(--main-color);
+    border-bottom: solid 2px;
+    border-color: rgb(202, 202, 202);
+}
+
+.header .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1rem 5rem;
+    cursor: pointer;
+}
+
+.header img {
+    width: 3rem;
+    margin-right: 20px;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    margin-right: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+/* Home */
+
+#home {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+#home > * {
+    font-weight: bold;
+}
+
+#home h1 {
+    margin: 3rem 0;
+    font-size: calc(3rem + 2vw);
+    background: linear-gradient(to right, var(--main-color), #e83904);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-bottom: solid rgb(202, 202, 202);
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 2rem;
+}
+
+#home img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+#home button {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#home button:hover {
+    background-color: #d75403;
+}
+
+/* Menu */
+
+#menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 700px;
+}
+
+#menu h1 {
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: solid rgb(202, 202, 202);
+    margin-bottom: 2rem;
+}
+
+.menuCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.menuCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFBDB;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 5px 5px #e7e4d3;
+}
+
+.menuCard h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.menuCard p {
+    font-size: 1.5rem;
+}
+
+/* About */
+
+#about {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 700px;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: solid rgb(202, 202, 202);
+    margin-bottom: 2rem;
+}
+
+#about p {
+    font-size: 2rem;
+}
